@@ -42,7 +42,7 @@ body{
     height:600px;
     width:100%; 
     margin-bottom: 40px;
-    background: url(/Assets/images/backy.jpg);   
+    background: url(./assets/images/backy.jpg);   
     background-size: cover;
     background-position: center;
 }
