@@ -55,11 +55,21 @@ a  {
     text-decoration: none;
 }
 
+section{
+    font-size: 20px;
 
+}
+p {
+    margin: 2% 0;
+    font-size: 110%;
+}
+
+
+     
 .contact-line li {
     padding: 10px;
     align-items:flex-end;
     font-size: 25px; 
     display:inline-block;
-
+    margin-right: auto;
     }
