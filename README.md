@@ -1,6 +1,7 @@
 My Portofolio
 
-This Project 
+This Project binds everything I have learnt in terms of grouping HTML differents elements and CSS differents style.
+
 Technologies used
 
 HTML CSS
