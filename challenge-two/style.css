@@ -55,6 +55,11 @@ a  {
     text-decoration: none;
 }
 
-.skills{
 
-}
+.contact-line li {
+    padding: 10px;
+    align-items:flex-end;
+    font-size: 25px; 
+    display:inline-block;
+
+    }
