@@ -19,3 +19,4 @@ GIVEN I need to sample a potential employee's previous work WHEN I load their po
 Technologies used
 
 HTML CSS
+![image](https://user-images.githubusercontent.com/87868537/197646262-e126b916-540b-4bea-8432-c41c9c97f713.png)
