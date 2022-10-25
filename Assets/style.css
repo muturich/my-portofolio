@@ -42,7 +42,7 @@ body{
     height:600px;
     width:100%; 
     margin-bottom: 40px;
-    background: url(./assets/images/backy.jpg);   
+    background: url(./images/backy.jpg);   
     background-size: cover;
     background-position: center;
 }
@@ -73,8 +73,11 @@ p {
   .aboutme-text {
     flex: 20;
   }
-  
-  .aboutme-text p h2{
+  h2{
+    display: flex;
+    align-items: center;
+  }
+  .aboutme-text p {
     font-size: 25px;
     text-align: left;
     line-height: 1.3;
