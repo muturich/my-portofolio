@@ -1,104 +1,315 @@
-*{  box-sizing: border-box;
+*{  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-body{
-    background-color: aliceblue;
+
+header a , footer a {
+    text-decoration: none;
+    color:rgb(7, 139, 175);
 }
 
-.header{
-    padding:0px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(3, 22, 77);
-    background-color: azure;
+section h1, footer h1 {
 
+font-size: 50px;
+color: #006594;
+border-right : 3px solid #0273a0;
+padding: 5px 10px;
+text-align: right;
+width: 20%;
 }
-.header h1{
-    font-size: 54px;
-    display:inline-block;
-}
-.header {
-    padding-top: 20px;
-    margin-right: 22px;
-    align-items:center;
+
+header {
+    background: #186b8b;
     display: flex;
     justify-content: space-between;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 35px;
-    color: rgb(48, 70, 134)
-    ;
- }
-.header ul{
-    list-style-type: none;
-}
-.header ul li{
-
-    display: inline-block;
-    margin-left: 25px;
-}
-
-.spacex {
-
-    height:600px;
-    width:100%; 
-    margin-bottom: 40px;
-    background:url(./images/backy.jpg);
-    background-size: cover;
-    background-position: center;
-}
-#iphoto {
-    margin: 410px auto;
-    border: 5px solid black;
-}
-
-a  {
-    text-decoration: none;
-}
-/* styling about me*/
-
-section{
-    font-size: 20px;
-
-}
-p {
-    margin: 2% 0;
-    font-size: 110%;
-}
-
-.vertical-line1{
-    border-right: 3px solid #39a6b2;
-    height: 100px;
-    flex: 2 1%;
-  }
-  .aboutme-text {
-    flex: 20;
-  }
-  h2{
-    display: flex;
-    align-items: center;
-  }
-  .aboutme-text p {
-    font-size: 25px;
-    text-align: left;
-    line-height: 1.3;
-    margin-left: 0px;
-    width: 100%;
-  }
-  .aboutme-info{
-    flex :2 200%;
-    display: flex;
     flex-wrap: wrap;
-    align-items: center;
 
-  }
-    .row h2{
+}
+
+header h1 {
+    background: #fcfcfc;
+    color: #0273a0;
+    font-size: 50px;
+    display: inline-block;
+    padding: 5px 5px 5px 50px;
+    margin: 1.5% 0;
+}
+/* Styling for the navigation links in the header */
+header nav {
+    color: #0273a0;
+    font-weight: lighter;
+    justify-content: space-between;
+    margin: 1.5% 5% 1.5% 0;
+}
+
+header nav ul, 
+footer nav ul {
+    list-style: none;
+    display: flex; 
+    flex-wrap: wrap; /*test removal*/
+    justify-content: space-between;
+    align-content: center;
+    margin: 1.5% 0 1.5% 0;
+}
+
+header nav ul li {
+    border-bottom: 3px solid #cce5e6;
+    font-size: 24px;
+    display: inline-block; 
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+/* Header End */
+/* Main styling for the image below the header */
+.hero {
+    background: #92CCCE;
+    color: #31353D;
     display: flex;
-    justify-content: left;
-    margin-top: 20px;
-  }
+    justify-content: right;
+    background-image: url("./images/myphoto.jpeg");
+    background-size: cover;
+    background-position:5%;
+    background-attachment: fixed;
+    height: 500px;
+    position: relative;
+}
 
-.contact-line li{
+/* Position and style sub-heading */
+.hero h2 {
+    text-align: center;
     padding: 10px;
-    font-size: 25px; 
-    display:inline-block;
+    margin-right: 5%;
+    background: #92CCCE;
+    position: absolute;
+    bottom: 10%;
+}
+
+.content article {
+    margin: 20px 0;
+    width: 95%;
+}
+
+/* About me section to the left of the content */
+.about-me {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me p {
+    color: #455978;
+    padding: 0 10px;
+    width: 80%;
+}
+/* Work section to the left of the content */
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 0 12px;
+}
+
+.project-container {
+    border: 3px solid #92CCCE;
+    flex-grow: 1;
+    width: 47%;
+    height: 150px;
+    margin: 5px 0;
+    object-fit: cover;
+    position: relative;
+    /*work on justifying and aligning the content to get better spacing*/
+}
+
+.project-container h3 {
+    color: #31353D;
+    background: #92CCCE;
+    font-weight: bolder;
+    padding: 5px;
+    position: absolute;
+    bottom: 10%;
+    line-height: 1.2;
+}
+
+.project-container h3 p {
+    font-size: smaller;
+    font-weight: lighter;
+}
+
+.project-container img {
+    filter: brightness(65%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+/* Makes the image brighter when hovered over */
+.project-container img:hover {
+    filter: brightness(100%);
+}
+
+.primary-project {
+    height: 300px;
+    width: 100%;
+    margin-top: 0;
+}
+
+/* Helps get the spacing to look consistent on the smaller projects */
+.margin-right {
+    margin-right: 7px;
+}
+
+.margin-left {
+    margin-left: 7px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: #455978;
+}
+/* Styling for footer navigation links */
+footer nav {
+    width: 80%;
+    padding: 0 10px;
+    justify-content: space-between;
+    margin: 1.5% 5% 1.5% 0;
+}
+
+footer nav li {
+    color: #455978;
+    border-bottom: 3px solid #455978;
+    font-size: 24px;
+    font-weight: lighter;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 3px 10px;
+    margin: 10px;
+}
+/* Formats for tablet sized screens */
+@media screen and (max-width: 980px){
+    section h1, 
+    footer h1{
+        font-size: 40px;
+    }
+
+}
+/*  Formats for phone sized screens  */
+@media screen and (max-width: 768px){
+
+    header {
+        justify-content: center;
+    }
+
+    header h1 {
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+    }
+
+    header nav {
+        margin: 1%;
+        justify-content: space-evenly;
+    }
+
+    .hero{
+        height: 150px;
+        justify-content: center;
+    }
+
+    .hero h2 {
+        margin: 0;
+    }
+
+    section h1, footer h1{
+        font-size: 32px;
+    } 
+}
+/* Formats for smaller phone screens */
+@media screen and (max-width: 575px){
+
+    .primary-project{
+        height: 150px;
+    }
+
+    section h1, 
+    footer h1{
+        font-size: 32px;
+        width: 100%;
+        text-align: left;
+        border-right: none;
+        border-bottom: 3px solid;
+        padding: inherit;
+    }
+
+    header nav ul li {
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+
+
+    .content article, 
+    footer {
+        margin: 20px;
+        width: auto;
+    }
+
+    /* Stacks content when screen is thinner */
+    .about-me, 
+    .skills, 
+    footer {
+        flex-direction: column;
+    }
+
+    .project-container, 
+    footer nav{
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Handles making the column look consistent */
+    .margin-left{
+        margin-left: 0;
+    }
+
+    .margin-right{
+        margin-right: 0;
+    }
+
+    .projects, 
+    .about-me p {
+        width: auto;
+        margin-top: 20px;
+        padding: inherit;
+    }
+
+    footer nav {
+        margin: 0;
+        width: auto;
+        padding: 0;
+
+    }
+    /* Changes format of footer navigation elements */
+    footer nav ul {
+        flex-direction: column;
+        align-items: baseline;
+        align-content: baseline;
+    }
+
+    footer nav ul li {
+        margin: 0;
+        width: fit-content;
+    }
+    
+
 }
